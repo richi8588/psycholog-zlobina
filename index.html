@@ -5,63 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Сайт психолога Ирины Злобиной</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Для иконок -->
 </head>
 <body>
-  <header>
-    <h1>Ирина Излобина</h1>
-    <p>Психолог, Гештальт-терапевт</p>
-    <nav>
-      <a href="#about">Обо мне</a>
-      <a href="#services">Услуги</a>
-      <a href="#problems">Запросы</a>
-      <a href="#contact">Контакты</a>
-    </nav>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Ирина Излобина</h1>
+      <p>Психолог, Гештальт-терапевт</p>
+      <a href="#contact" class="cta-button">Записаться на консультацию</a>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>Обо мне</h2>
-    <p>Я практикующий психолог и гештальт-терапевт. Я помогаю клиентам более ясно увидеть их жизненные ситуации и найти новые решения для преодоления трудностей.</p>
-    <p>В своей работе я использую глубинное процессное консультирование, основанное на методологии гештальта и феноменологического подхода.</p>
-    <h3>Образование</h3>
-    <ul>
-        <li>Московский государственный университет им. М.В. Ломоносова</li>
-        <li>Московский институт гештальта и психодрамы (МИГИП)</li>
-        <li>Московский институт психоанализа (МИП)</li>
-    </ul>
+  <nav>
+    <a href="#about">Обо мне</a>
+    <a href="#services">Услуги</a>
+    <a href="#problems">Запросы</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <section id="about" class="fade-in">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>Обо мне</h2>
+            <p>Я практикующий психолог и гештальт-терапевт. Я помогаю клиентам более ясно увидеть их жизненные ситуации и найти новые решения для преодоления трудностей.</p>
+            <p>В своей работе я использую глубинное процессное консультирование, основанное на методологии гештальта и феноменологического подхода.</p>
+            <h3>Образование</h3>
+            <ul>
+                <li>Московский государственный университет им. М.В. Ломоносова</li>
+                <li>Московский институт гештальта и психодрамы (МИГИП)</li>
+                <li>Московский институт психоанализа (МИП)</li>
+            </ul>
+        </div>
+        <div class="about-photo">
+            <img src="https://via.placeholder.com/300" alt="Ирина Излобина">
+        </div>
+    </div>
   </section>
 
-  <section id="services">
+  <section id="services" class="fade-in">
     <h2>Услуги</h2>
-    <ul>
-      <li>Индивидуальная консультация (очно или онлайн) - от 3000 руб / 50 мин</li>
-    </ul>
+    <div class="cards-container">
+        <div class="card">
+            <h3>Индивидуальная консультация</h3>
+            <p><strong>Формат:</strong> очно или онлайн</p>
+            <p><strong>Длительность:</strong> 50 минут</p>
+            <p class="price">от 3000 руб.</p>
+        </div>
+    </div>
   </section>
 
-  <section id="problems">
+  <section id="problems" class="fade-in">
     <h2>С чем я работаю</h2>
-    <ul>
-      <li>трудности в отношениях</li>
-      <li>тревожные состояния</li>
-      <li>неуверенность в себе и низкая самооценка</li>
-      <li>самореализация и выгорание</li>
-      <li>стресс и подавленность</li>
-      <li>потеря близких и чувство одиночества</li>
-      <li>чувство вины и стыда</li>
-      <li>трудности с выбором и пониманием своих эмоций</li>
-    </ul>
+    <div class="cards-container">
+        <div class="card">Трудности в отношениях</div>
+        <div class="card">Тревожные состояния</div>
+        <div class="card">Неуверенность в себе</div>
+        <div class="card">Самореализация и выгорание</div>
+        <div class="card">Стресс и подавленность</div>
+        <div class="card">Потеря близких</div>
+        <div class="card">Чувство вины и стыда</div>
+        <div class="card">Трудности с выбором</div>
+    </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="fade-in">
     <h2>Контакты</h2>
     <p>Записаться на консультацию можно через мессенджеры:</p>
-    <p>
-        <a href="https://wa.me/79169008709" target="_blank">WhatsApp</a> | 
-        <a href="https://t.me/izlobina_ia" target="_blank">Telegram</a> |
+    <div class="social-links">
+        <a href="https://wa.me/79169008709" target="_blank">WhatsApp</a>
+        <a href="https://t.me/izlobina_ia" target="_blank">Telegram</a>
         <a href="https://viber.click/79169008709" target="_blank">Viber</a>
-    </p>
-
+    </div>
     <form>
-      <h3>Запись на консультацию</h3>
+      <h3>Или оставьте заявку</h3>
       <input type="text" name="name" placeholder="Ваше имя" required />
       <input type="email" name="email" placeholder="Ваш email" required />
       <textarea name="message" placeholder="Опишите ваш запрос" rows="4"></textarea>
@@ -72,5 +88,22 @@
   <footer>
     <p>&copy; 2025 Ирина Излобина. Все права защищены.</p>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in').forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
+
 </body>
 </html>
